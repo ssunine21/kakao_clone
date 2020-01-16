@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/ae18a42bb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Chats | Kakao Clone</title>
 </head>
+
 <body>
     <div class="status_bar">
         <div class="status_bar_column">
@@ -33,7 +36,9 @@
                 <i class="far fa-comment"></i>
             </span>
             <span class="header_icon">
-                <i class="fas fa-cog"></i>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                </a>
             </span>
         </div>
     </header>
@@ -41,20 +46,31 @@
     <main class="chats">
         <ul class="chats_list">
             <li class="chats_chat">
-                <div class="chat_column">
-                    <img class="chat_avatar g_avatar" src="images/img.jpg"/>
-                    <div class="chat_content">
-                        <span class="chat_username">
-                            Lynn
-                        </span>
-                        <span class="chat_preview">
-                            i wanna go home
-                        </span>
+                <a href="chat.html">
+                    <div class="chats_chat friend parent_lg">
+                        <div class="friend_column">
+                            <img src="images/cat.jpg" class="m_avatar friend_avatar" />
+                            <div class="friend_content">
+                                <span class="friend_name">
+                                    hyun
+                                </span>
+                                <span class="friend_bottom_text">
+                                    so go home
+                                </span>
+                            </div>
+                        </div>
+                    
+                        <div class="friend_column">
+                            <div class="friend_now_listening">
+                                <span class="chat_timestamp">
+                                    March 8
+                                </span>
+                            </div>
+                    
+                        </div>
+                    
                     </div>
-                </div>
-                <div class="chat_column">
-                    <span class="chat_timestamp">Yesterday</span>
-                </div>
+                </a>
             </li>
         </ul>
     </main>
@@ -68,6 +84,7 @@
             </li>
             <li class="nav_list_item">
                 <a href="index.html" class="nav_list_link">
+                    <div class="nav_badge">8</div>
                     <i class="fas fa-comment"></i>
                 </a>
             </li>
@@ -84,4 +101,5 @@
         </ul>
     </nav>
 </body>
+
 </html>
